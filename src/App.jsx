@@ -29,10 +29,10 @@ const App = () => {
         {countries.map((country) => (
           <div key={country.name.common} className="country-card">
             <img src={country.flags.svg} alt={country.flags.alt} />
+            <div className='country-header'>
+              <h2>{country.name.common}</h2>
+            </div>
             <div className="country-info">
-              <p>
-                <strong>Name:</strong> {country.name.common}
-              </p>
               <p>
                 <strong>Capital:</strong> {country.capital}
               </p>
